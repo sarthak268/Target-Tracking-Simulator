@@ -2,7 +2,19 @@
 
 This repository contains code for urban environment simulator that can be used to test Target Tracking algorithms. It has functionalities for dynamic target and cylindrical obstacles.
 
-### Testing your algoriths using this simulator
+### Contents
+
+- <i>animation_2d</i>: Simulate the environment in x-y plane.
+- <i>animation_3d</i>: Simulate the environment in x-z plane.
+- <i>create_map</i>: Create customisable map for the environment. 
+- <i>args</i>: Arguments that are used by all other scripts.
+
+### Testing your Algoriths using this Simulator
+
+- Install all required libraries. For this simply run the following command.
+```
+pip install -r requirements.txt
+```
 
 - Add your target-tracking algorithm code in the same directory. 
 
@@ -30,7 +42,6 @@ For example, for setting the position as p_x and p_y, radius as r and height as 
 obstacle_name = patches.Circle((p_x, p_y), radius=r, fc='g')
 
 obstacle_name = patches.Rectangle((p_x, 0), 2*r, h, fc='g') 
-
 ```
 
 - Add or change the arguments of your choice in <i>args.py</i> file. You may also want to change the plotting configurations placed immediately after the import statements in all animation files.
