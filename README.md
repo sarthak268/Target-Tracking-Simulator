@@ -21,4 +21,16 @@ file = open("state_drone.txt", "w")
 file.write(str(state_x) + ' ' + str(state_y) + ' ' + str(state_z) + ' ' + str(time_step_drone))
 file.close()
 ```
+
+- Change the position, radius, height and number of obstacles based on your requirements. This can be done by changing line 44-46 in <i>animation_2d.py</i> and line 45-47 in <i>animation_3d.py</i>. 
+
+For example, for setting the position as p_x and p_y, radius as r and height as h for an obstacle, make the following additions to <i>animation_2d.py</i> and <i>animation_3d.py</i> respectively.
+
+```
+obstacle_name = patches.Circle((p_x, p_y), radius=r, fc='g')
+
+obstacle_name = patches.Rectangle((p_x, 0), 2*r, h, fc='g') 
+
+```
+
 - Add or change the arguments of your choice in <i>args.py</i> file. You may also want to change the plotting configurations placed immediately after the import statements in all animation files.
