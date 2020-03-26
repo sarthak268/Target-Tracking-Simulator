@@ -48,6 +48,12 @@ obstacle_name = patches.Circle((p_x, p_y), radius=r, fc='g')
 obstacle_name = patches.Rectangle((p_x, 0), 2*r, h, fc='g') 
 ```
 
+We could also change the field of view of the agent (<i>FOV</i>) by changing line 59 in <i>animation_2d.py</i>. Say, we want to make the radius of field of view as fov_radius, just make the following change.
+
+```
+fov_circle = patches.Circle((0, 0), radius=fov_radius, fc=None, ec='k', alpha=0.3)
+```
+
 - Add or change the arguments of your choice in <i>args.py</i> file. You may also want to change the plotting configurations placed immediately after the import statements in all animation files.
 
 - Finally, for simulating an episode using actions suggested by your algorithm, run the following commands in seperate terminals.
