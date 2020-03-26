@@ -13,7 +13,7 @@ This repository contains code for urban environment simulator that can be used t
 
 ---
 
-### Testing your Algoriths using this Simulator
+### Testing your Algorithms using this Simulator
 
 - Install all required libraries. For this simply run the following command.
 ```
