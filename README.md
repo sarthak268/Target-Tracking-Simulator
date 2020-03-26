@@ -4,7 +4,9 @@ This repository contains code for urban environment simulator that can be used t
 
 ### Testing your algoriths using this simulator
 
-- Add your target-tracking algorithm code in the same directory. That file must read the current state of the target from the file <i>state_car.txt</i>, which could be used to determine the effectiveness of the choosen action by your algotithm. You amy use the snippet given below for reading the file.
+- Add your target-tracking algorithm code in the same directory. 
+
+That file must read the current state of the target from the file <i>state_car.txt</i>, which could be used to determine the effectiveness of the choosen action by your algotithm. You amy use the snippet given below for reading the file.
 
 ```
 file = open("state_car.txt", "r")
@@ -19,3 +21,4 @@ file = open("state_drone.txt", "w")
 file.write(str(state_x) + ' ' + str(state_y) + ' ' + str(state_z) + ' ' + str(time_step_drone))
 file.close()
 ```
+- Add or change the arguments of your choice in <i>args.py</i> file. You may also want to change the plotting configurations placed immediately after the import statements in all animation files.
