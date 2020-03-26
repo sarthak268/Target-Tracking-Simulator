@@ -7,6 +7,7 @@ from matplotlib import animation
 import random
 import math
 import pickle
+from args import FLAGS
 
 fig = plt.figure()
 plt.axis('equal')
@@ -61,11 +62,6 @@ time_step_drone = 0
 def distance_2d(x1, y1, x2, y2):
 	return math.sqrt((x1-x2)**2 + (y1-y2)**2)
 
-def get_direction_random():
-	move_to_x = random.uniform(0, 100)
-	move_to_y = random.uniform(0, 100)
-	return move_to_x, move_to_y
-
 def choose_direction(arr, current_direction, x, y):
 	if (current_direction == 0):
 		if (1 in arr):
@@ -85,7 +81,7 @@ def choose_direction(arr, current_direction, x, y):
 				arr.remove(0)
 			if(2 in arr):
 				arr.remove(2)
-		elif(y==100):
+		elif(y==FLAGS.grid_size-1):
 			if(3 in arr):
 				arr.remove(3)
 			if(0 in arr):
@@ -93,13 +89,13 @@ def choose_direction(arr, current_direction, x, y):
 		else:
 			if(0 in arr):
 				arr.remove(0)
-	if(x == 100):
+	if(x == FLAGS.grid_size-1):
 		if(y==0):
 			if(1 in arr):
 				arr.remove(1)
 			if(2 in arr):
 				arr.remove(2)
-		elif(y==100):
+		elif(y==FLAGS.grid_size-1):
 			if(1 in arr):
 				arr.remove(1)
 			if(3 in arr):
@@ -113,7 +109,7 @@ def choose_direction(arr, current_direction, x, y):
 				arr.remove(0)
 			if(2 in arr):
 				arr.remove(0)
-		if(x==100):
+		if(x==FLAGS.grid_size-1):
 			if(1 in arr):
 				arr.remove(1)
 			if(2 in arr):
@@ -121,13 +117,13 @@ def choose_direction(arr, current_direction, x, y):
 		else:
 			if (2 in arr):
 				arr.remove(2)
-	if(y == 100):
+	if(y == FLAGS.grid_size-1):
 		if(x==0):
 			if(0 in arr):
 				arr.remove(0)
 			if(3 in arr):
 				arr.remove(3)
-		if(x==100):
+		if(x==FLAGS.grid_size-1):
 			if(1 in arr):
 				arr.remove(1)
 			if(3 in arr):
@@ -135,7 +131,7 @@ def choose_direction(arr, current_direction, x, y):
 		else:
 			if(3 in arr):
 				arr.remove(3)
-	# add for 100 also
+	# add for FLAGS.grid_size-1 also
 	num = len(arr)
 	ind = random.randint(0, num-1)
 	return arr[ind]
@@ -265,13 +261,6 @@ def animate(i):
 	global time_step_drone
 	global time_step_car
 
-	######### previous - working
-	# speed_car = 2.0
-	# if (i % 20 == 0):
-	# 	move_dir_x, move_dir_y = get_direction_random()
-	# c = move_car(move_dir_x, move_dir_y, speed_car)
-	#########
-
 	# for car
 	if (time_step_car == time_step_drone):
 		car_x, car_y = get_car_state()
@@ -295,7 +284,7 @@ def animate(i):
 def main_animation():
 	# anim = animation.FuncAnimation(fig, animate,
 	# 							   init_func=init,
-	# 							   frames=1000,
+	# 							   frames=FLAGS.grid_size-10,
 	# 							   interval=500,
 	# 							   blit=False)
 	anim = animation.FuncAnimation(fig, animate,

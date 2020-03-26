@@ -1,12 +1,10 @@
 import numpy as np
 import pickle
-from main import flags
 
 ##################################### write
-arr = np.zeros((flags.grid_size + 1, flags.grid_size + 1))
+arr = np.zeros((102, 102))
 
 roads = [0, 25, 50, 75, 100]
-# change this array roads to vary the position of rods in the map
 
 for i in range(len(roads)):
 	ind = roads[i]
