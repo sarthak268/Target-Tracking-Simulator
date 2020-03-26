@@ -2,12 +2,16 @@
 
 This repository contains code for urban environment simulator that can be used to test Target Tracking algorithms. It has functionalities for dynamic target and cylindrical obstacles.
 
+---
+
 ### Contents
 
 - <i>animation_2d</i>: Simulate the environment in x-y plane.
 - <i>animation_3d</i>: Simulate the environment in x-z plane.
 - <i>create_map</i>: Create customisable map for the environment. 
 - <i>args</i>: Arguments that are used by all other scripts.
+
+---
 
 ### Testing your Algoriths using this Simulator
 
