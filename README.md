@@ -50,7 +50,7 @@ obstacle_name = patches.Rectangle((p_x, 0), 2*r, h, fc='g')
 
 - Add or change the arguments of your choice in <i>args.py</i> file. You may also want to change the plotting configurations placed immediately after the import statements in all animation files.
 
-- Finally for simulating an episode using actions suggested by your algorithm. Run the following commands in seperate terminals.
+- Finally, for simulating an episode using actions suggested by your algorithm, run the following commands in seperate terminals.
 
 ```
 python animation_2d.py
