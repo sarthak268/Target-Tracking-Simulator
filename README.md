@@ -11,8 +11,6 @@ This repository contains code for urban environment simulator that can be used t
 - <i>create_map</i>: Create customisable map for the environment. 
 - <i>args</i>: Arguments that are used by all other scripts.
 
----
-
 ## Testing your Algorithms using this Simulator
 
 - Install all required libraries. For this simply run the following command.
