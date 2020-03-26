@@ -131,7 +131,6 @@ def choose_direction(arr, current_direction, x, y):
 		else:
 			if(3 in arr):
 				arr.remove(3)
-	# add for FLAGS.grid_size-1 also
 	num = len(arr)
 	ind = random.randint(0, num-1)
 	return arr[ind]
@@ -190,8 +189,6 @@ def move_car(move_direction):
 	global current_y
 	global current_direction
 
-	#print("current car position ==>", current_x, current_y)
-
 	if (move_direction == 0):
 		next_x = current_x - 1
 		next_y = current_y
@@ -211,8 +208,6 @@ def move_car(move_direction):
 
 	car.set_xy([next_x, next_y])
 
-	#print("new car position ==>", next_x, next_y)
-
 	current_x = next_x
 	current_y = next_y
 	write_car_state([current_x, current_y])
@@ -229,9 +224,6 @@ def move_drone(drone_dir_x, drone_dir_y, speed):
 	else:
 		next_x = current_x_drone
 		next_y = current_y_drone
-
-	# next_x = drone_dir_x
-	# next_y = drone_dir_y
 
 	drone.set_xy([next_x, next_y])
 	
@@ -254,8 +246,6 @@ def init():
     return car, drone,
 
 def animate(i):
-	#global move_dir_x
-	#global move_dir_y
 	global move_dir_x_drone
 	global move_dir_y_drone
 	global time_step_drone
@@ -265,7 +255,6 @@ def animate(i):
 	if (time_step_car == time_step_drone):
 		car_x, car_y = get_car_state()
 		car_movement_direction = get_direction_from_map_file(car_x, car_y, current_direction)
-		#print ('move == ', car_movement_direction)
 		c = move_car(car_movement_direction)
 		print ('\n')
 

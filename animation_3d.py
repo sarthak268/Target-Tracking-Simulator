@@ -7,6 +7,7 @@ from matplotlib import animation
 import random
 import math
 import pickle
+from args import FLAGS
 
 fig = plt.figure()
 plt.axis('equal')

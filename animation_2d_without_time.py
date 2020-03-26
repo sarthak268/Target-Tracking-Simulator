@@ -8,6 +8,7 @@ import random
 import math
 import pickle
 import csv
+from args import FLAGS
 
 fig = plt.figure()
 plt.axis('equal')
@@ -43,18 +44,9 @@ drone_dir_x = 0
 drone_dir_y = 0
 
 ################ adding obstacles
-obstacle1 = patches.Circle((30, 35), radius=2.5, fc='g')
-obstacle2 = patches.Circle((20, 15), radius=2.5, fc='g')
-obstacle3 = patches.Circle((55, 50), radius=2.5, fc='g') 
-obstacle4 = patches.Circle((70, 75), radius=5, fc='g')
-obstacle5 = patches.Circle((20, 50), radius=5, fc='g') 
-
-# obstacle1 = patches.Circle((20, 20), radius=7.5, fc='g')
-# obstacle2 = patches.Circle((20, 75), radius=5, fc='g')
-# obstacle3 = patches.Circle((60, 60), radius=7.5, fc='g') 
-# obstacle4 = patches.Circle((45, 25), radius=5, fc='g')
-# obstacle5 = patches.Circle((80, 25), radius=10, fc='g') 
-# obstacle6 = patches.Circle((80, 90), radius=12.5, fc='g')
+obstacle1 = patches.Circle((30, 30), radius=2.5, fc='g')
+obstacle2 = patches.Circle((20, 5), radius=2.5, fc='g')
+obstacle3 = patches.Circle((50, 50), radius=5, fc='g') 
 
 ### initially writting 0, 0 to both text files
 file = open("state_car.txt", "w")
@@ -197,8 +189,6 @@ def move_car(move_direction):
 	global current_y
 	global current_direction
 
-	#print("current car position ==>", current_x, current_y)
-
 	if (move_direction == 0):
 		next_x = current_x - 1
 		next_y = current_y
@@ -217,8 +207,6 @@ def move_car(move_direction):
 		current_direction = 3
 
 	car.set_xy([next_x, next_y])
-
-	#print("new car position ==>", next_x, next_y)
 
 	current_x = next_x
 	current_y = next_y
@@ -241,9 +229,6 @@ def move_drone(drone_dir_x, drone_dir_y, speed):
 	else:
 		next_x = current_x_drone
 		next_y = current_y_drone
-
-	# next_x = drone_dir_x
-	# next_y = drone_dir_y
 
 	with open('drone_trajectory.csv', mode='a') as csv_file:
 		writer=csv.writer(csv_file)
@@ -277,18 +262,9 @@ def init():
     return car, drone,
 
 def animate(i):
-	#global move_dir_x
-	#global move_dir_y
 	global move_dir_x_drone
 	global move_dir_y_drone
 	
-	######### previous - working
-	# speed_car = 2.0
-	# if (i % 20 == 0):
-	# 	move_dir_x, move_dir_y = get_direction_random()
-	# c = move_car(move_dir_x, move_dir_y, speed_car)
-	#########
-
 	# for car
 	car_x, car_y = get_car_state()
 	car_movement_direction = get_direction_from_map_file(car_x, car_y, current_direction)
