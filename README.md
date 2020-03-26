@@ -69,3 +69,12 @@ python your_target_tracking_algorithm_script.py
 Below is a screenshot of the environment developed by the animation_2d.py script. Here, red circle depicts the agent, yellow circle depicts the target, blue circle depicts the FOV and green ones depict the obstacles.
 
 ![figure](environment.png)
+
+---
+### License
+
+Copyright (c) 2020 Sarthak Bhagat, P.B. Sujit. 
+
+For license information, see LICENSE or http://mit-license.org
+
+
