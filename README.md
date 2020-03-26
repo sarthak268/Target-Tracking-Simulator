@@ -22,7 +22,7 @@ pip install -r requirements.txt
 
 - Add your target-tracking algorithm code in the same directory. 
 
-That file must read the current state of the target from the file <i>state_car.txt</i>, which could be used to determine the effectiveness of the choosen action by your algotithm. You amy use the snippet given below for reading the file.
+That file must read the current state of the target from the file <i>state_car.txt</i>, which could be used to determine the effectiveness of the choosen action by your algotithm. You may use the snippet given below for reading the file.
 
 ```
 file = open("state_car.txt", "r")
