@@ -4,7 +4,7 @@ This repository contains code for urban environment simulator that can be used t
 
 ---
 
-### Contents
+## Contents
 
 - <i>animation_2d</i>: Simulate the environment in x-y plane.
 - <i>animation_3d</i>: Simulate the environment in x-z plane.
@@ -13,7 +13,7 @@ This repository contains code for urban environment simulator that can be used t
 
 ---
 
-### Testing your Algorithms using this Simulator
+## Testing your Algorithms using this Simulator
 
 - Install all required libraries. For this simply run the following command.
 ```
@@ -64,13 +64,17 @@ python animation_3d.py
 python your_target_tracking_algorithm_script.py
 ```
 
-### Screenshot of Environment
+## Screenshot of Environment
 
 Below is a screenshot of the environment developed by the animation_2d.py script. Here, red circle depicts the agent, yellow circle depicts the target, blue circle depicts the FOV and green ones depict the obstacles.
 
 ![figure](environment.png)
 
 ---
+### Contact
+
+If you face any problem in running this code, you can contact us at sarthak16189@iiitd.ac.in.
+
 ### License
 
 Copyright (c) 2020 Sarthak Bhagat, P.B. Sujit. 
