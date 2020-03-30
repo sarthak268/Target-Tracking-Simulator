@@ -6,10 +6,10 @@ This repository contains code for urban environment simulator that can be used t
 
 ## Contents
 
-- <i>animation_2d</i>: Simulate the environment in x-y plane.
-- <i>animation_3d</i>: Simulate the environment in x-z plane.
-- <i>create_map</i>: Create customisable map for the environment. 
-- <i>args</i>: Arguments that are used by all other scripts.
+- `animation_2d.py`: Simulate the environment in x-y plane.
+- `animation_3d.py`: Simulate the environment in x-z plane.
+- `create_map.py`: Create customisable map for the environment. 
+- `args.py`: Arguments that are used by all other scripts.
 
 ## Testing your Algorithms using this Simulator
 
