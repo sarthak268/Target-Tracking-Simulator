@@ -1,6 +1,10 @@
 # Target Tracking Urban Environment Simulator
 
-This repository contains code for urban environment simulator that can be used to test Target Tracking algorithms. It has functionalities for dynamic target and cylindrical obstacles.
+This repository contains code for urban environment simulator that can be used to test Target Tracking algorithms. It has functionalities for dynamic target and cylindrical obstacles. 
+
+This work is a part of paper "UAV Target Tracking in Urban Environments using Deep Reinforcement Learning" published at The 2020 International Conference on Unmanned Aircraft Systems, Athens, Greece. In case you find any of this useful consider citing our work.
+
+Preprint will be available shortly!
 
 ---
 
