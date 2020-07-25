@@ -4,9 +4,13 @@ This repository contains code for urban environment simulator that can be used t
 
 This work is a part of paper "UAV Target Tracking in Urban Environments using Deep Reinforcement Learning" published at <i>The 2020 International Conference on Unmanned Aircraft Systems, Athens, Greece</i>. In case you find any of this useful consider citing our work.
 
-Preprint will be available shortly!
-
----
+```
+@inproceedings{Bhagat2020UAVTT,
+  title={UAV Target Tracking in Urban Environments Using Deep Reinforcement Learning},
+  author={Sarthak Bhagat and P. B. Sujit},
+  year={2020}
+}
+```
 
 ## Contents
 
