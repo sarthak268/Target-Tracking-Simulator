@@ -2,7 +2,7 @@
 
 This repository contains code for urban environment simulator that can be used to test Target Tracking algorithms. It has functionalities for dynamic target and cylindrical obstacles. 
 
-This work is a part of paper "UAV Target Tracking in Urban Environments using Deep Reinforcement Learning" published at <i>The 2020 International Conference on Unmanned Aircraft Systems, Athens, Greece</i>. In case you find any of this useful consider citing our work.
+This work is a part of paper <a href="https://arxiv.org/abs/2007.10934">"UAV Target Tracking in Urban Environments using Deep Reinforcement Learning"</a> published at <i>The 2020 International Conference on Unmanned Aircraft Systems, Athens, Greece</i>. In case you find any of this useful consider citing our work.
 
 ```
 @inproceedings{Bhagat2020UAVTT,
