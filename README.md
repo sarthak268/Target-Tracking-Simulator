@@ -5,10 +5,12 @@ This repository contains code for urban environment simulator that can be used t
 This work is a part of paper <a href="https://arxiv.org/abs/2007.10934">"UAV Target Tracking in Urban Environments using Deep Reinforcement Learning"</a> published at <i>The 2020 International Conference on Unmanned Aircraft Systems, Athens, Greece</i>. In case you find any of this useful consider citing our work.
 
 ```
-@inproceedings{Bhagat2020UAVTT,
+@article{Bhagat2020UAVTT,
   title={UAV Target Tracking in Urban Environments Using Deep Reinforcement Learning},
   author={Sarthak Bhagat and P. B. Sujit},
-  year={2020}
+  journal={ArXiv},
+  year={2020},
+  volume={abs/2007.10934}
 }
 ```
 
